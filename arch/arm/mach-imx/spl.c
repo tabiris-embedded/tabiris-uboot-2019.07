@@ -20,7 +20,7 @@ DECLARE_GLOBAL_DATA_PTR;
 
 #if defined(CONFIG_MX6)
 /* determine boot device from SRC_SBMR1 (BOOT_CFG[4:1]) or SRC_GPR9 register */
-u32 spl_boot_device(void)
+__weak u32 spl_boot_device(void)
 {
 	unsigned int bmode = readl(&src_base->sbmr2);
 	u32 reg = imx6_src_get_boot_mode();

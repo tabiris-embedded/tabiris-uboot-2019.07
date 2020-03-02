@@ -1,0 +1,6 @@
+MX6TABIRIS BOARD 
+M:	Binh Nguyen <tabiris1612@gmail.com>
+S:	Maintained
+F:	board/hhd-embedded/mx6tabiris/
+F:	include/configs/mx6tabiris.h
+F:	configs/mx6tabiris_defconfig 
